@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Reem+Kufi&family=Roboto&family=Work+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #f13131;
+  --secondary: #4f1bdd;
+  --tertiary: #f0ae22;
+  --negative: #ffffff;
+  --dark: #000000;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+section {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.25);
+  background-color: var(--negative);
+  margin: 0 90px;
+  padding: 40px 30px;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+}
+section:hover {
+  transform: scale(0.85);
+}
+section:nth-of-type(3) {
+  color: var(--primary);
+}
+section:nth-of-type(2) {
+  margin: 0;
+  color: var(--secondary);
+}
+section:nth-of-type(1) {
+  color: var(--tertiary);
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 25px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  opacity: 0.78;
+  font-weight: 400;
+}
+p {
+  font-size: 13px;
+
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+.class-button1 {
+  background-color: var(--tertiary);
+  color: var(--negative);
+  padding: 8px 10px;
+  margin-top: 30px;
+  width: 140px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.class-button2 {
+  background-color: var(--secondary);
+  color: var(--negative);
+  padding: 8px 10px;
+  width: 140px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.class-button3 {
+  background-color: var(--primary);
+  color: var(--negative);
+  padding: 8px 10px;
+  width: 140px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.class-button1 svg {
+  margin-left: 20px;
+}
+.class-button2 svg {
+  margin-left: 20px;
+}
+.class-button3 svg {
+  margin-left: 20px;
+}
+.path1 {
+  stroke: var(--primary);
+}
+.path2 {
+  stroke: var(--secondary);
+}
+.path3 {
+  stroke: var(--tertiary);
+}
